@@ -11,5 +11,5 @@
             "email": "dogancandemir2001@gmail.com"
         }
     ],
-    "require": {}
+    "require": {"mongodb/mongodb": "^1.15"}
 }
