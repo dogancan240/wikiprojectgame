@@ -14,7 +14,11 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo_mysql mbstring
 
 # Install MongoDB PHP extension
-RUN pecl install mongodb \
+RUN apt-get update && apt-get install -y \
+    libssl-dev \
+    libsasl2-dev \
+    libcurl4-openssl-dev \
+    && pecl install mongodb \
     && docker-php-ext-enable mongodb
 
 # Enable Apache mod_rewrite
