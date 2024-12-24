@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => '__root__',
+        'name' => 'dogancan/gamewiki',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'b5216c8da9f36671c0c9ad3f01b542ecd39a6da4',
+        'reference' => '764c52363550b78f7d69a682ab24e80961c1b50e',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        '__root__' => array(
+        'dogancan/gamewiki' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b5216c8da9f36671c0c9ad3f01b542ecd39a6da4',
+            'reference' => '764c52363550b78f7d69a682ab24e80961c1b50e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
