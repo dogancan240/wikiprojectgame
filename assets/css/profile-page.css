@@ -1,0 +1,89 @@
+:root {
+  --primary-blue: #2563eb;
+  --primary-blue-dark: #1d4ed8;
+  --light-blue: #eff6ff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1f2937;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-label {
+  color: #6b7280;
+  min-width: 4rem;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.games-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.games-table th {
+  background: var(--light-blue);
+  color: var(--primary-blue);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+}
+
+.games-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.games-table tr:hover {
+  background-color: var(--light-blue);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-blue);
+}
