@@ -6,9 +6,16 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libonig-dev \
     libxml2-dev \
+    libcurl4-openssl-dev \
+    pkg-config \
+    libssl-dev \
     curl \
     git \
     && docker-php-ext-install pdo_mysql mbstring
+
+# Install MongoDB PHP extension
+RUN pecl install mongodb \
+    && docker-php-ext-enable mongodb
 
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
@@ -34,3 +41,4 @@ EXPOSE 80
 
 # Start Apache server
 CMD ["apache2-foreground"]
+
